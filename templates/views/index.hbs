@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p>Use this site to get your weather!</p>
+        <form onsubmit="return loadWeatherDetails(event)">
+            <input id="locationName" placeholder="Location" type="text" />
+            <button type="submit">Search</button>
+        </form>
+        <div id="weatherDetailsDiv"></div>
+    </div>
+
+    {{>footer}}
+</body>
+
+
+</html>

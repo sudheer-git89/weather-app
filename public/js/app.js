@@ -1,5 +1,3 @@
-console.log('Client side javascript file is loaded!');
-
 function getWeatherDetails() {
     console.log(locationName.value);
 }
